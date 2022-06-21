@@ -1,0 +1,232 @@
+:root {
+	--buttonBackground: #28a745;
+	--main: #5CDB95;
+	--darken: #379683;
+	--buttonText: #ffffff;
+	--background: #8EE4AF;
+}
+
+body {
+	background-color: var(--background) !important;
+}
+
+button, input, select, option {
+	border: 0;
+	background-color: var(--buttonBackground);
+}
+
+button {
+	color: var(--buttonText);
+}
+select {
+	background-color: var(--buttonBackground) !important;
+}
+option {
+	background-color: var(--darken);
+}
+
+select,option {
+	color: var(--buttonText) !important;
+}
+
+.btn-width{
+	width: 40vw;
+}
+
+#parametr_div {
+	margin-left: 15px;
+	overflow: hidden;
+	display: flex;
+	align-items:center
+}
+
+#parametr_div p {
+	margin-bottom: 0;
+}
+
+.mapButtons {
+	margin-top: 10px;
+}
+
+button {
+	border-radius: 2px;
+	padding: 10px;
+}
+
+#ChooseButton {
+	margin-top: -7px;
+}
+
+#ChooseButton {
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.form-group{
+	margin: 15px;
+}
+.container-button{
+	position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    bottom: 50%;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	text-align:center;
+	align-content: center;
+	align-items: center;
+}
+button{
+	margin: 0;
+}
+
+.overlay {
+	height: 100vh;
+	width: 100vw;
+	transform: translateX(100%);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: var(--main);
+	transition: 0.5s;
+}
+
+.overlay > * {
+	background-color: var(--main);
+}
+
+.overlay.open {
+	transform: translateX(0);
+}
+
+.overlay-content {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.burgerMenu {
+	margin-left: auto;
+    width: fit-content;
+	margin-right: 10px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: var(--buttonText);
+}
+
+#mapButtons button {
+	padding: 15px;
+}
+
+img {
+	background-color: transparent;
+}
+
+.overlay a {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: var(--buttonText);
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: var(--buttonText);
+}
+
+#error {
+	color: red;
+	margin-bottom: 15px;
+
+}
+
+.logo-time{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.logo-time img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.btn {
+	margin-top: 15px;
+}
+
+.modals {
+	/* display: flex; */
+	display: none;
+    justify-content: space-between;
+}
+
+#mapButtons {
+	margin-top: 15px;
+	margin-left: 15px;
+	height: 0;
+	display: flex;
+}
+
+#goButton {
+	background-color: #357351;
+	color: var(--buttonText);
+	padding: 20px;
+	font-size: 1.5rem;
+	margin-left: auto;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#mapButtons button{
+	height: 100%;
+	overflow: hidden;
+	border: 0;
+	align-self: center;
+	margin: 5px;
+}
+
+.closebtn {
+	background-color: transparent;
+}
+
+@media screen and (max-width: 450px) {
+	.overlay .closebtn {
+		font-size: 55px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.logo-header{
+	margin-left: auto;
+    margin-right: auto;
+	padding-left: 35px;
+	background-color: transparent;
+}
+
+.logo-pop{
+	width: 100%;
+	height: 100%;
+	background-color: var(--background);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}

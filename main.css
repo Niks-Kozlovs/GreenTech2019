@@ -1,0 +1,21 @@
+#map {
+    height: 80vh;
+    width: 100%;
+}
+
+.closedMap {
+    transform: translateX(-100%);
+}
+
+#mapParent {
+    width: 100%;
+    position: absolute;
+}
+
+.popup-mobile {
+    font-size: 30px;
+}
+
+.popup-desktop {
+    font-weight: bold;
+}
